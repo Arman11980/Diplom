@@ -1,5 +1,8 @@
 body {
-    background-color: #94a26b
+    background-image: url(django.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 h1 {
     text-align: center;

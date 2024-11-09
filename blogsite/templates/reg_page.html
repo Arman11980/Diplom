@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X_UA_Compatible" content="ie=edge">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+    {% csrf_token %}
+    <lable for='username'>Введите логин:</lable>
+    <input type="text" id="username" name="username" maxlength="30" required>
+
+    <lable for='password'>Введите пароль:</lable>
+    <input type="text" id="password" name="password" minlength="8"  required>
+
+    <lable for='repeate_password'>Повторите пароль:</lable>
+    <input type="text" id="repeate_password" name="repeate_password" minlength="8" required>
+
+    <lable for='age'>Введите свой возраст:</lable>
+    <input type="int" id="age" name="age" maxlength="3" required>
+
+    <button type="submit">Отправить форму</button>
+    </form>
+</body>
+</html>
