@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% block content %}
+
+<div class="container mt-5 border d-flex justify-content-center">
+<h2>Hello {{ user }}</h2>
+  <form  action="/new_post/" enctype="multipart/form-data"  method="POST"> {% csrf_token %}
+  <div class="container mt-4">
+  {{ form.as_p }}
+<button type="submit" class="btn btn-success">Post</button>
+  </div>
+  </form>
+  <br>#breaks line
+</div>
+
+{% endblock %}
