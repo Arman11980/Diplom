@@ -1,15 +1,18 @@
 {% extends 'base.html'%}
 {% block content %}
-
-<div class="container mt-5 border d-flex justify-content-center">
-<h2>Hello {{ user }}</h2>
-  <form  action="/new_post/" enctype="multipart/form-data"  method="POST"> {% csrf_token %}
-  <div class="container mt-4">
-  {{ form.as_p }}
-<button type="submit" class="btn btn-success">Post</button>
-  </div>
-  </form>
-  <br>#breaks line
-</div>
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <div class="container mt-5 border d-flex justify-content-center">
+      <h2>Здравствуйте {{ user }}</h2>
+        <form  action="/new_post/" enctype="multipart/form-data"  method="POST"> {% csrf_token %}
+    <div class="container mt-4">
+    {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Post</button>
+    </div>
+        </form>
+        <br>#breaks line
+    </div>
 
 {% endblock %}

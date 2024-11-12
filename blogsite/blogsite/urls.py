@@ -28,7 +28,7 @@ urlpatterns = [
     path('new_post/', views.new_post, name='new_post'),
     path('<slug:slug>', views.post_details, name='post_details'),
     path('delete_blog_post/<slug:slug>/', views.delete_post,name='delete_blog_post'),
-    path('sing', sign_up_by_django),
-    path('sing/', sign_up_by_html),
+    path('sing1/', sign_up_by_django),
+    path('sing2/', sign_up_by_html),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

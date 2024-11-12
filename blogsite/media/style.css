@@ -1,0 +1,68 @@
+  /* Общие стили для улучшения внешнего вида */
+        body {
+            font-family: 'Arial', sans-serif; /* Установка семейства шрифтов и стилей по умолчанию */
+            margin: 0;
+            padding: 0;
+            background-color: white                        /* Установка цвета фона */
+        }
+
+         class="background-div" {
+            background-image: url('media/images/django.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            box-shadow: 0px 0px 10px #ccc;
+            border: 1px solid #ddd;
+        }
+
+        /* Стили для элемента header */
+        header {
+            background-color: #6d6d6d; /* Установка цвета фона */
+            color: white; /* Установка цвета текста */
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Стили для навигационного меню */
+        nav ul {
+            list-style-type: none; /* Убрать маркеры списка */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline; /* Отображение пунктов списка горизонтально */
+            margin-right: 15px; /* Установка правого отступа для пунктов списка */
+        }
+
+        /* Стили для основного раздела веб-страницы */
+        section {
+            max-width: 800px; /* Установка максимальной ширины раздела */
+            margin: auto; /* Центрирование раздела на странице */
+            padding: 20px;
+        }
+
+        /* Стили для каждой статьи (товара) в разделе */
+        article {
+            margin-bottom: 20px; /* Установка нижнего отступа для каждой статьи */
+            border: 1px solid #ddd; /* Добавление рамки и установка цвета рамки */
+            padding: 10px;
+            background-color: white; /* Установка цвета фона */
+        }
+
+        article img {
+            width: cover; /* Установка ширины изображения на 50% родительского контейнера */
+            height: auto; /* Поддерживаем пропорции изображения */
+            border: 1px solid #ddd; /* Добавление рамки к изображениям */
+        }
+
+        /* Стили для элемента footer */
+        footer {
+            background-color: #333; /* Установка цвета фона */
+            color: white; /* Установка цвета текста */
+            text-align: center;
+            padding: 10px;
+            position: fixed; /* Фиксирование подвала внизу видимой области */
+            bottom: 0;
+            width: 100%; /* Установка ширины в 100% от видимой области */
+        }
