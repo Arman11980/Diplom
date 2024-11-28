@@ -22,7 +22,8 @@
 
   домашняя страница Django
    Тут есть кнопки на добавления постов, чтение, удалене и коментариев к посту
-   ![Снимок экрана 2024-11-26 220605](https://github.com/user-attachments/assets/8e36681e-030c-4e24-997e-d8b70b6a5637)
+   ![Снимок экрана 2024-11-28 152531](https://github.com/user-attachments/assets/818b3e4d-b3a8-4fb1-bcb6-71e0c3ac839f)
+
 
    панель администрирования
    ![Снимок экрана 2024-11-27 202405](https://github.com/user-attachments/assets/715cfca0-fc2a-48a8-96bb-d8a83a103bc3)
