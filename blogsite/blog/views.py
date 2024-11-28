@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect
-from .models import *
 from .forms import *
 from django.http import HttpResponse
 
@@ -42,7 +41,6 @@ def delete_post(request, slug):
     return render(request, 'delete.html', {'post': post})
 
 def sign_up_by_html(request):
-    users = ['Dima', 'Alena', 'Alexandr']
     info = {}
 
     if request.method == "POST":
@@ -50,49 +48,9 @@ def sign_up_by_html(request):
         password = request.POST.get('password')
         repeat_password = request.POST.get('repeat_password')
         age = request.POST.get('age')
-
-        if password != repeat_password:
-            info['error'] = 'Пароли не совпадают'
-        elif int(age) < 18:
-            info['error'] = 'Вы должны быть старше 18'
-        elif username in users:
-            info['error'] = 'Пользователь уже существует'
-        else:
-            return HttpResponse(f'Приветствуем, {username}!')
-
-        print(f"Имя: {username}")
-        print(f"Пароль: {password}")
-        print(f"Повтор пароля: {repeat_password}")
-        print(f"Возраст: {age}")
-
-
-    return render(request, 'reg_page.html', info)
-
-
-def sign_up_by_django(request):
-    users = ['Irina', 'Alexey', 'Alexandr']
-    info = {}
-    form = UserRegister()
-
-    if request.method == 'POST':
-        form = UserRegister(request.POST)
-        if form.is_valid():
-            username = form.cleaned_data['username']
-            password = form.cleaned_data['password']
-            repeat_password = form.cleaned_data['repeat_password']
-            age = form.cleaned_data['age']
-
-            if password != repeat_password:
-                info['error'] = 'Пароли не совпадают'
-            elif age < 18:
-                info['error'] = 'Вы должны быть старше 18'
-            elif username in users:
-                info['error'] = 'Пользователь уже существует'
-            else:
-                return HttpResponse(f'Приветствуем, {username}!')
-
-    info['form'] = form
     return render(request, 'reg_page.html', info)
 
 def main_page(request):
     return HttpResponse("Это главная страница")
+
+

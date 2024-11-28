@@ -7,26 +7,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Заголовок веб-страницы -->
     <title>Главная</title>
+    <!-- Внутренние стили CSS для веб-страницы -->
+    <style>
+        /* Общие стили для улучшения внешнего вида */
+        body {
+            font-family: 'Arial', sans-serif; /* Установка семейства шрифтов и стилей по умолчанию */
+            margin: 0;
+            padding: 0;
+            background-image: url(https://vkplay.ru/pre_0x736_resize/hotbox/content_files/news/2021/03/11/461b405b706e4cfdb412efb1c440dea8.jpg?quality=85);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover; /* Установка цвета фона */
+        }
+
+        /* Стили для элемента header */
+        header {
+            background-color: transparent; /* Установка цвета фона */
+            color: white; /* Установка цвета текста */
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Стили для навигационного меню */
+        nav ul {
+            list-style-type: none; /* Убрать маркеры списка */
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline; /* Отображение пунктов списка горизонтально */
+            margin-right: 15px; /* Установка правого отступа для пунктов списка */
+        }
+
+        /* Стили для элемента footer */
+        footer {
+            background-color: transparent; /* Установка цвета фона */
+            color: white; /* Установка цвета текста */
+            text-align: center;
+            padding: 5px;
+            position: fixed; /* Фиксирование подвала внизу видимой области */
+            bottom: 0;
+            width: 100%; /* Установка ширины в 100% от видимой области */
+        }
+    </style>
 </head>
 <body>
     <div class="main">
-  <div class="container">
-      <!-- Внутренние стили CSS для веб-страницы -->
-    <link rel="stylesheet" type="text/css" href="media/style.css" />
+    <div class="container">
     <!-- Секция заголовка с названием и навигационным меню -->
-    <header>
-        <h1>Добро пожаловать в Мой блог!</h1>
-        <!-- Навигационное меню с ссылками на различные страницы -->
-        <nav>
-            <ul>
-                <li><a href="http://127.0.0.1:8000">Главная</a></li>
-                <li><a href="about.html">Обо мне</a></li>
-                <li><a href="products.html">Хобби</a></li>
-                <li><a href="http://127.0.0.1:8000/admin/blog/post/add/">new_post</a></li>
-            </ul>
-        </nav>
-    </header>
-      <div class="background-div"></div>
+        <header>
+            <h1>Добро пожаловать в Мой блог!</h1>
+            <!-- Навигационное меню с ссылками на различные страницы -->
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="#">Обо мне</a></li>
+                    <li><a href="http://127.0.0.1:8000/admin/blog/post/add/">new_post</a></li>
+                    <li><a href='#'>хобби</a></li>
+                </ul>
+            </nav>
+        </header>
       {% block content %}
     {% endblock %}
       </div>
