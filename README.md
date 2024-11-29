@@ -34,7 +34,7 @@
    ![Снимок экрана 2024-11-27 204145](https://github.com/user-attachments/assets/4b38687d-a905-4ea0-a608-657e630cf692)
 
 ##Пример файловой структуры проекта для блога FastAPI
-
+'''
 |-BlogFastAPI
   |-static
   |   |-style.css
@@ -44,9 +44,9 @@
   |    |-post.html
   |-main.py
   |-requirements.txt
-  
+  '''
 ##Пример файловой структуры проекта для блога Django
-
+'''
 |-blog_site
   |-blogsite
     |-blog
@@ -80,7 +80,7 @@
     |-db.sqlite3
     |-manage.py
     |-requirements.txt
-    
+    '''
 ##Список необходимых библиотек для блога Django
 
     asgiref==3.8.1
